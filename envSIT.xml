@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ibgs>
+    <dbCfg>
+        <dbURL>jdbc:mysql://192.168.1.95/afestone</dbURL>
+        <driverName>com.mysql.jdbc.Driver</driverName>
+        <username>t2system</username>
+        <password>123456</password>
+    </dbCfg>
+
+    <mqCfg>
+        <mqURL>amqp://192.168.1.155:5672</mqURL>
+        <usernmae>admin</usernmae>
+        <password>password</password>
+    </mqCfg>
+
+    <httpCfg>
+        <siloURI>http://192.168.1.95:8080/FarEastT2DataCenter/silotransaction.operation</siloURI>
+        <entryURI>http://192.168.1.95:8080/FarEastT2DataCenter/transaction.build</entryURI>
+        <exitURI>http://192.168.1.95:8080/FarEastT2DataCenter/transaction.end</exitURI>
+    </httpCfg>
+
+    <gateLane>
+        <gate name="T1-1">
+            <reader name="gateReader1" ip="192.168.50.9" entryAnt="1" exitAnt="2"/>
+            <ioc name="ioc1" ip="192.168.50.75" timer="100" entryDo="0" exitDo="1" />
+            <barrier name="barrier" ip="192.168.50.85" openDo="1"/>
+        </gate>
+        <!--<gate name="T1-2">-->
+            <!--<reader name="gateReader2" ip="192.168.1.156"/>-->
+            <!--<ioc name="ioc2" ip="192.168.2.249" timer="100"/>-->
+            <!--<barrier name="barrier" doIndex="1"/>-->
+        <!--</gate>-->
+    </gateLane>
+
+    <siloLane>
+        <!--<silo no="1">-->
+            <!--<reader name="siloReader1" ip="192.168.1.156"/>-->
+        <!--</silo>-->
+        <!--<silo no="2">-->
+            <!--<reader name="siloReader2" ip="192.168.1.156"/>-->
+        <!--</silo>-->
+    </siloLane>
+
+    <weighLane>
+        <!--<weigh name="T2-1">-->
+            <!--<reader name="weightReader1" ip="192.168.1.156" entryAnt="1" exitAnt="2"/>-->
+            <!--<ioc name="iocA" ip="192.168.2.249" timer="100" entryDo="2" exitDo="3"/>-->
+        <!--</weigh>-->
+        <!--<weigh name="T2-2">-->
+            <!--<reader name="weightReader2" ip="192.168.1.156"/>-->
+            <!--<ioc name="iocB" ip="192.168.2.249" timer="100"/>-->
+        <!--</weigh>-->
+    </weighLane>
+</ibgs>

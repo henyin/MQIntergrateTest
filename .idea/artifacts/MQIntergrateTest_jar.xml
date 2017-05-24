@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MQIntergrateTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MQIntergrateTest_jar</output-path>
+    <root id="archive" name="MQIntergrateTest.jar">
+      <element id="module-output" name="MQIntergrateTest" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../RFIDReaderClient/out/artifacts/RFIDReaderClient_jar/RFIDReaderClient.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../HttpReqUtil/out/artifacts/HttpReqUtil_jar/HttpReqUtil.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ModbusUtil/out/artifacts/ModbusUtil_jar/ModbusUtil.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../OPTCLib/dom4j/dom4j-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../OPTCLib/dom4j/jaxme-api-0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../OPTCLib/dom4j/jaxen-1.1-beta-6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../library/jackson-core-2.7.3/jackson-annotations-2.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../library/jackson-core-2.7.3/jackson-core-2.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../library/jackson-core-2.7.3/jackson-databind-2.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MQUtility/out/artifacts/MQUtility_jar/MQUtility.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../DatabaseUtil/out/artifacts/DatabaseUtil_jar/DatabaseUtil.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

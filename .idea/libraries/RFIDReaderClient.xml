@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RFIDReaderClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RFIDReaderClient/out/artifacts/RFIDReaderClient_jar/RFIDReaderClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MQUtility">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MQUtility/out/artifacts/MQUtility_jar/MQUtility.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
